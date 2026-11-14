@@ -18,10 +18,11 @@ jobs:
         
     - name: Grant execute permission for gradlew
       run: chmod +x gradlew
-      working-directory: .
+      working-directory: "./SSR Tunnel"
       
     - name: Build with Gradle
       run: ./gradlew assembleDebug
+      working-directory: "./SSR Tunnel"
       
     - name: Upload APK
       uses: actions/upload-artifact@v3
